@@ -1,0 +1,11 @@
+<p><%= flash[:notice] %></p>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+
+<p><%= link_to "Add article", new_article_path %></p>

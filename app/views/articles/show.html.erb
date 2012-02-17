@@ -1,0 +1,8 @@
+<h2><%= @article.title %></h2>
+<p>
+  <%= @article.body.gsub("\n", "<br />\n").html_safe %>
+</p>
+<p>
+  <%= link_to @back_link_text, articles_path %> | <%= link_to "Edit", edit_article_path(@article) %>
+
+</p>
